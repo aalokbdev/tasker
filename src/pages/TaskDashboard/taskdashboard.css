@@ -1,0 +1,31 @@
+.task-dashboard {
+    padding: 2rem;
+  }
+
+  .header-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
+
+  
+  
+  .task-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .task-list {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .task-list {
+      grid-template-columns: 1fr;
+    }
+  }
